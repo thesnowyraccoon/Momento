@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Depleted_Health_Bar-removebg-preview_0: -1016178569819398364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
