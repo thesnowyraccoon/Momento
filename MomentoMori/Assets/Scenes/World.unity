@@ -2879,7 +2879,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 5.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &962908649
@@ -12092,6 +12092,7 @@ GameObject:
   - component: {fileID: 2096464272}
   - component: {fileID: 2096464271}
   - component: {fileID: 2096464273}
+  - component: {fileID: 2096464274}
   m_Layer: 0
   m_Name: FortuneTeller
   m_TagString: Untagged
@@ -12108,7 +12109,7 @@ Transform:
   m_GameObject: {fileID: 2096464268}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.57, y: 14.55, z: 0.06125704}
+  m_LocalPosition: {x: -5.68, y: 13.83, z: 0.06125704}
   m_LocalScale: {x: 2.7, y: 2.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12185,12 +12186,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 8085cb5c215e28d4e87bb5df7d1fe9ef, type: 3}
+  m_Sprite: {fileID: -2469348218383576749, guid: 8085cb5c215e28d4e87bb5df7d1fe9ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.4857144, y: 3.0857143}
+  m_Size: {x: 0.8914286, y: 1.4857143}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12234,8 +12235,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.4857144, y: 3.0857143}
-    newSize: {x: 5.4857144, y: 3.0857143}
+    oldSize: {x: 0.8914286, y: 1.4857143}
+    newSize: {x: 0.8914286, y: 1.4857143}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12282,6 +12283,23 @@ PolygonCollider2D:
       - {x: 0.26465407, y: -0.75742775}
       - {x: 0.28869978, y: -0.7580953}
   m_UseDelaunayMesh: 0
+--- !u!111 &2096464274
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096464268}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: a8209bc916bf12f42bb6ae515e37cbe6, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a8209bc916bf12f42bb6ae515e37cbe6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &2138185862
 GameObject:
   m_ObjectHideFlags: 0
