@@ -2,7 +2,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -168,72 +167,9 @@ public class PlayerController : MonoBehaviour
     // Player health display and check
     void Health()
     {
-        _textHealth.text = "Health: " + playerHealth;
-
         if (playerHealth > maxHealth)
         {
             playerHealth = maxHealth;
-        }
-
-        RawImage full = GameObject.Find("fullHealth").GetComponent<RawImage>();
-        RawImage three = GameObject.Find("threeHealth").GetComponent<RawImage>();
-        RawImage half = GameObject.Find("halfHealth").GetComponent<RawImage>();
-        RawImage quarter = GameObject.Find("quarterHealth").GetComponent<RawImage>();
-        RawImage zero = GameObject.Find("zeroHealth").GetComponent<RawImage>();
-
-        TextMeshProUGUI gameOver = GameObject.Find("GameOver").GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI overText = GameObject.Find("overText").GetComponent<TextMeshProUGUI>();
-        Image overButton = GameObject.Find("overButton").GetComponent<Image>();
-
-        if (playerHealth == maxHealth)
-        {
-            full.enabled = true;
-            three.enabled = false;
-            half.enabled = false;
-            quarter.enabled = false;
-            zero.enabled = false;
-        }
-        
-        if (playerHealth < maxHealth && playerHealth > (maxHealth/2))
-        {
-            full.enabled = false;
-            three.enabled = true;
-            half.enabled = false;
-            quarter.enabled = false;
-            zero.enabled = false;
-        }
-        
-        if (playerHealth == (maxHealth/2))
-        {
-            full.enabled = false;
-            three.enabled = false;
-            half.enabled = true;
-            quarter.enabled = false;
-            zero.enabled = false;
-        }
-        
-        if (playerHealth < (maxHealth/2))
-        {
-            full.enabled = false;
-            three.enabled = false;
-            half.enabled = false;
-            quarter.enabled = true;
-            zero.enabled = false;
-        }
-
-        if (playerHealth <= 0)
-        {
-            full.enabled = false;
-            three.enabled = false;
-            half.enabled = false;
-            quarter.enabled = false;
-            zero.enabled = true;
-
-            Destroy(gameObject);
-
-            gameOver.enabled = true;
-            overButton.enabled = true;
-            overText.enabled = true;
         }
     }
 
